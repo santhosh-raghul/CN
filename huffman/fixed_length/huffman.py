@@ -29,6 +29,7 @@ class Huffman:
 		file=open(self.filename,'rb')
 		file.readline();file.readline();file.readline()
 		file_content=file.read()
+		file.close()
 		seq=''
 		for byte in file_content:
 			seq=seq+'{0:08b}'.format(byte)
